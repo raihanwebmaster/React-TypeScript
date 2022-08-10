@@ -16,6 +16,7 @@ import { Counter } from "./components/class/Counter";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
 import { List } from "./components/generics/List";
+import { RandomNumber } from "./components/restriction/RandomNumber";
 
 function App() {
   const personName = {
@@ -76,6 +77,7 @@ function App() {
         ]}
         onClick={(item) => console.log(item)}
       />
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
